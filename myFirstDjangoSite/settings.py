@@ -103,6 +103,7 @@ ROOT_URLCONF = 'myFirstDjangoSite.urls'
 WSGI_APPLICATION = 'myFirstDjangoSite.wsgi.application'
 
 TEMPLATE_DIRS = (
+    '/Users/tmacbook/Documents/CODING/django/Sites/myFirstDjangoSite/myFirstDjangoSite/templates'
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
