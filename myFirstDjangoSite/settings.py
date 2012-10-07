@@ -3,7 +3,7 @@
 import dj_database_url
 import os.path
 PROJECT_DIR = os.path.dirname(__file__)
-DATABASES = {'default': dj_database_url.config(default='postgres://postgres@localhost/myFirstDjangoDB')}
+DATABASES = {'default': dj_database_url.config(default='postgres://localhost/myfirstdjangodb')}
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
