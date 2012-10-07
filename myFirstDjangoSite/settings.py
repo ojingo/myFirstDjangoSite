@@ -1,7 +1,8 @@
 # Django settings for myFirstDjangoSite project.
 
 import dj_database_url
-import os
+import os.path
+PROJECT_DIR = os.path.dirname(__file__)
 DATABASES = {'default': dj_database_url.config(default='postgres://localhost')}
 
 DEBUG = True
@@ -96,7 +97,7 @@ ROOT_URLCONF = 'myFirstDjangoSite.urls'
 WSGI_APPLICATION = 'myFirstDjangoSite.wsgi.application'
 
 TEMPLATE_DIRS = (
-    os.path.join(os.path.dirname(__file__), 'myFirstDjangoSite/templates'),
+    os.path.join(PROJECT_DIR, 'templates'),
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
