@@ -3,7 +3,7 @@
 import dj_database_url
 import os.path
 PROJECT_DIR = os.path.dirname(__file__)
-DATABASES = {'default': dj_database_url.config(default='postgres://localhost')}
+DATABASES = {'default': dj_database_url.config(default='postgres://postgres@localhost/myFirstDjangoDB')}
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -115,6 +115,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'polls',
+    'gunicorn',
 )
 
 # A sample logging configuration. The only tangible logging
