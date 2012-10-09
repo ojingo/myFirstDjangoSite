@@ -116,6 +116,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'polls',
     'gunicorn',
+    'cd_library',
 )
 
 # A sample logging configuration. The only tangible logging
