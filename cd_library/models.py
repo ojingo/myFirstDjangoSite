@@ -5,6 +5,9 @@ GENRE_CHOICES = (
                  ('B', 'Blues'),
                  ('J', 'Jazz'),
                  ('P', 'Pop'),
+                 ('M', 'Metal'),
+                 ('T', 'Techno'),
+                 ('D&B', 'Drum and Bass'),
                 )
 
 
