@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+import datetime
 
 
 def hello(request):
@@ -7,3 +8,9 @@ def hello(request):
 
 def homePage(request):
     return HttpResponse("This is the home page!")
+
+
+def current_datetime(request):
+    now = datetime.datetime.now()
+    html = "<html><body>It is now %s.</body></html>" % now
+    return HttpResponse(html)
